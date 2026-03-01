@@ -1,0 +1,102 @@
+/* TerDash — Deep-Sea Blue Desktop Dashboard Styles (Qt StyleSheet) */
+
+/* ─── Global ─── */
+* {
+    font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
+}
+
+QMainWindow, QWidget#central {
+    background-color: #0d1b2a;
+}
+
+/* ─── Header Bar ─── */
+QFrame#header-bar {
+    background-color: #152238;
+    border-bottom: 1px solid #233554;
+}
+
+QLabel#header-title {
+    color: #56d4e8;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+QLabel#header-clock {
+    color: #6a7a9a;
+    font-size: 13px;
+    font-family: "Consolas", "Segoe UI", monospace;
+}
+
+/* ─── Scroll Area ─── */
+QScrollArea#main-scroll {
+    background-color: #0d1b2a;
+    border: none;
+}
+
+/* ─── Panel Boxes ─── */
+QFrame.panel-box {
+    background-color: #152238;
+    border: 1px solid #233554;
+    border-radius: 6px;
+}
+
+/* ─── Panel Titles ─── */
+QLabel.panel-title {
+    color: #56d4e8;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 0px 0px 2px 2px;
+    letter-spacing: 0.5px;
+}
+
+/* ─── Primary Text ─── */
+QLabel {
+    color: #e0e0ff;
+    font-size: 13px;
+}
+
+/* ─── Dim Text ─── */
+QLabel.dim {
+    color: #6a7a9a;
+}
+
+/* ─── Scrollbar (minimal) ─── */
+QScrollBar:vertical {
+    background: #0d1b2a;
+    width: 6px;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background: #233554;
+    border-radius: 3px;
+    min-height: 30px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+QScrollBar:horizontal {
+    height: 0px;
+}
+
+/* ─── Message Box (delete confirmation) ─── */
+QMessageBox {
+    background-color: #152238;
+}
+QMessageBox QLabel {
+    color: #e0e0ff;
+    font-size: 13px;
+}
+QMessageBox QPushButton {
+    background-color: #1c2d44;
+    color: #e0e0ff;
+    border: 1px solid #233554;
+    border-radius: 5px;
+    padding: 6px 18px;
+    font-size: 12px;
+    min-width: 60px;
+}
+QMessageBox QPushButton:hover {
+    border-color: #56d4e8;
+    color: #56d4e8;
+}
